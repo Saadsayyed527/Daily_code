@@ -1,0 +1,16 @@
+page no 1 
+we have to solve it with the ^ operator since when we ^ the 2 same number it just give the ans as 0 and different nums when different elements
+
+class Solution {
+    public int singleNumber(int[] nums) {
+      // https://www.youtube.com/watch?v=dUmaWUPRcLQ&t=263s
+//         we have to use the XOR operator  {^}
+        
+        int ans =0;
+        for(int i =0;i<nums.length;i++){
+            ans = ans^nums[i];
+        }
+    
+     return ans;
+    } 
+}
